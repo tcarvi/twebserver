@@ -1,0 +1,2787 @@
+/*
+ * Header:
+ *    - Banner de informação e menu superior
+ */
+
+.topHeader {
+    /* Layout */
+    display: block;
+    position: relative;
+    top: 0px;
+    z-index: 100;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Colors */
+    background-color: rgba(250,250,250,1);
+    /* Texts */
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    /* Overflow */
+    overflow: hidden;
+}
+
+#sectionBannerHeader {
+    /* Layout */
+    display: none;
+    position: relative;
+    top: 0px;
+    z-index: 100;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px;
+    border-style: none;
+    border-width: 0px;
+    padding: 8px;
+    width: 100%;
+    height: 3em;
+    /* Colors */
+    background-color: rgba(250,250,250,1);
+    /* Texts */
+    text-align: center;
+    font-size: 1em;
+    font-family: Verdana, Geneva, sans-serif;
+    /* Overflow */
+    overflow: hidden;
+}
+
+#sectionBannerHeader div a {
+    /* Layout */
+    /* Box model */
+    padding: 0.5em;
+    /* Colors */
+    /* Texts */
+    /* Overflow */
+}
+
+#sectionTopNav {
+    /* Layout */
+    display: block;
+    position: relative;
+    top: 0px;
+    z-index: 110;
+    /* Box model */
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 70em;
+    /* Colors */
+    background-color: rgba(250,250,250,1);
+    /* Texts */
+    text-align: center;
+    font-size: 1em;
+    font-family: Verdana, Geneva, sans-serif;
+    /* Overflow */
+    overflow: hidden;
+    /* Design do elemento*/
+    list-style-type: none;
+}
+
+#sectionTopNav ul {
+    /* Layout */
+    display: inline;
+    position: relative;
+    /* Box model */
+    box-sizing: border-box;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    /* Colors */
+    background-color: rgba(250,250,250,1);
+    /* Texts */
+    vertical-align: middle;
+    /* Overflow */
+    overflow: hidden;
+    /* Design do elemento*/
+    list-style-type: none;
+}
+
+#sectionTopNav ul li {
+    /* Layout */
+    display: inline-block;
+    z-index: 100;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    height: 2.5em;
+    width: 4.5em;
+    /* Colors */
+    background-color: rgba(250,250,250,1);
+    color: rgb(0,0,0);
+    /* Texts */
+    text-align: center;
+    /* Overflow */
+    overflow: hidden;
+    /* Design do elemento */
+    list-style-type: none;
+}
+
+#sectionTopNav ul li a {
+    /* Layout */
+    z-index: 100;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px;
+    border-style: none;
+    border-width: 0px;
+    padding: 14px 16px;
+    /* Colors */
+    /* Texts */
+    text-align: center;
+    /* Overflow */
+    overflow: hidden;
+    /* Design do elemento*/
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#sectionTopNav ul li a:hover {
+    background-color: rgb(221,221,221, 1);
+    color: black;
+}
+
+
+.pagination {
+    display: inline-block;
+}
+  
+.pagination li a{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid rgb(221,221,221, 1);
+}
+  
+.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+  
+.pagination li a:hover:not(.active) {background-color: rgb(221,221,221, 1);}
+
+#navButtonAcesso {
+    /* Layout */
+    display: inline-block;
+    z-index: 100;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 1.5em auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 15px 32px;
+    /* Colors */
+    background-color: #4CAF50;
+    color: white;
+    /* Texts */
+    font-size: 16px;
+    text-align: center;
+    /* Overflow */
+    overflow: hidden;
+    /* Design do elemento*/
+    list-style-type: none;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#navButtonAcesso:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*
+ * Middle:
+ *    - Caixas flutuantes nas laterais esquerda e direita.
+ *    - Quadros deslizantes de documentação
+ */
+
+.middleContent {
+    /* Layout */
+    display: block;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Colors */
+    /* Texts */
+    text-align: center;
+    font-size: 1em;
+    /* Overflow */
+    overflow: visible;
+}
+
+#sectionAtendimento1 {
+    /* Layout */
+    display: none;
+    float: left;
+    position: relative;
+    z-index: 90;
+    /* Box model */
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 12%;
+    height: 50em;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Colors */
+    background-color: rgb(221,221,221, 1);
+}
+
+#sectionAtendimento2 {
+    /* Layout */
+    display: none;
+    float: right;
+    position: relative;
+    z-index: 90;
+    /* Box model */
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-right: 0px;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 12%;
+    height: 50em;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Colors */
+    background-color: rgb(221,221,221, 1);
+}
+
+#sectionPlanos {
+    /* Layout */
+    display: block;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Colors */
+    background-color: rgba(255,255,255,1);
+}
+
+#sectionJogos{
+    /* Layout */
+    display: block;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Colors */
+    background-color: rgba(255,255,255,1);
+}
+
+#sectionBlog{
+    /* Layout */
+    display: block;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Colors */
+    background-color: rgba(255,255,255,1);
+}
+
+#sectionParceiros{
+    /* Layout */
+    display: none;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Colors */
+    background-color: rgba(255,255,255,1);
+}
+
+#sectionDepoimentos {
+    /* Layout */
+    display: none;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Colors */
+    background-color: rgba(240,240,240,1);
+}
+
+#sectionMidia {
+    /* Layout */
+    display: none;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Colors */
+    background-color: rgba(255,255,255,1);
+}
+
+#sectionIdealizadores {
+    /* Layout */
+    display: none;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    /* Colors */
+    background-color: rgba(255,255,255,1);
+}
+
+/*
+ * Footer: 
+ *    - Quadro de contato
+ */
+
+#sectionContato {
+    /* Layout */
+    display: block;
+    position: relative;
+    z-index: 10;
+    /* Box model */
+    box-sizing: border-box;
+    margin: 0px auto;
+    border-style: none;
+    border-width: 0px;
+    padding: 0px;
+    width: 100%;
+    /* Texts */
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+    /* Colors */
+    background-color: rgba(215,140,105,0.41);    
+}
+
+
+/*
+ * Design de responsividade
+ *
+ * iPhone 5/SE           ->>  320 vs  568
+ * Moto G4 and Galaxy S5 ->>  360 vs  640
+ * Galaxy S9/S9+         ->>  360 vs  740
+ * iPhone 6/7/8          ->>  375 vs  667
+ * iPhone X/XS           ->>  375 vs  812
+ * iPhone 6/7/8 Plus     ->>  414 vs  736
+ * iPad                  ->>  768 vs 1024
+ * kindle Fire HDX Linux ->>  800 vs 1280
+ * iPad PRO              ->> 1024 vs 1366
+ * laptops and desktops  ->> 1200
+ *
+ */
+
+/*
+ * Responsive layout
+ * when the screen is less than 320px wide
+ * EXTREMELY SMALL devices
+ */
+@media only screen and (max-width: 320px) {
+
+    .topHeader {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionBannerHeader {
+        /* Layout */
+        display: none;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 8px;
+        width: 100%;
+        height: 3em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionBannerHeader div a {
+        /* Layout */
+        /* Box model */
+        padding: 0.5em;
+        /* Colors */
+        /* Texts */
+        /* Overflow */
+    }
+
+    #sectionTopNav {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 110;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        max-width: 70em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline;
+        position: relative;
+        /* Box model */
+        box-sizing: border-box;
+        padding-inline-start: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        vertical-align: middle;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        height: 2.5em;
+        width: 4.5em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        color: rgb(0,0,0);
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento */
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li a {
+        /* Layout */
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 14px 16px;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    #sectionTopNav ul li a:hover {
+        background-color: rgb(221,221,221, 1);
+        color: black;
+    }
+    
+    
+    .pagination {
+        display: inline-block;
+    }
+      
+    .pagination li a{
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid rgb(221,221,221, 1);
+    }
+      
+    .pagination li a.active {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+      
+    .pagination li a:hover:not(.active) {background-color: rgb(221,221,221, 1);}
+    
+    #navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 1.5em auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 15px 32px;
+        /* Colors */
+        background-color: #4CAF50;
+        color: white;
+        /* Texts */
+        font-size: 16px;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    
+    #navButtonAcesso:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .middleContent {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        /* Overflow */
+        overflow: visible;
+    }
+
+    #sectionAtendimento1 {
+        /* Layout */
+        display: none;
+        float: left;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionAtendimento2 {
+        /* Layout */
+        display: none;
+        float: right;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionPlanos {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionJogos{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionBlog{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionParceiros{
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionDepoimentos {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(240,240,240,1);
+    }
+
+    #sectionMidia {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionIdealizadores {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+}
+
+/*
+ * Responsive layout
+ * when the screen is BETWEEN 320 AND 360 WIDE
+ * EXTRA SMALL devices
+ */
+@media only screen and (min-width: 320px) {
+
+    .topHeader {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionBannerHeader {
+        /* Layout */
+        display: none;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 8px;
+        width: 100%;
+        height: 3em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionTopNav {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 110;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        max-width: 70em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline;
+        position: relative;
+        /* Box model */
+        box-sizing: border-box;
+        padding-inline-start: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        vertical-align: middle;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        height: 2.5em;
+        width: 4.5em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        color: rgb(0,0,0);
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento */
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li a {
+        /* Layout */
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 14px 16px;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    #sectionTopNav ul li a:hover {
+        background-color: rgb(221,221,221, 1);
+        color: black;
+    }
+    
+    
+    .pagination {
+        display: inline-block;
+    }
+      
+    .pagination li a{
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid rgb(221,221,221, 1);
+    }
+      
+    .pagination li a.active {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+      
+    .pagination li a:hover:not(.active) {background-color: rgb(221,221,221, 1);}
+    
+    #navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 1.5em auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 15px 32px;
+        /* Colors */
+        background-color: #4CAF50;
+        color: white;
+        /* Texts */
+        font-size: 16px;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    
+    #navButtonAcesso:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .middleContent {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        /* Overflow */
+        overflow: visible;
+    }
+
+    #sectionAtendimento1 {
+        /* Layout */
+        display: none;
+        float: left;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionAtendimento2 {
+        /* Layout */
+        display: none;
+        float: right;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionPlanos {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionJogos{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionBlog{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionParceiros{
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionDepoimentos {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(240,240,240,1);
+    }
+
+    #sectionMidia {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionIdealizadores {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+}
+
+/*
+ * Responsive layout
+ * when the screen is BETWEEN 360 AND 375
+ * EXTRA SMALL devices
+ */
+ @media only screen and (min-width: 360px) {
+
+    .topHeader {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionBannerHeader {
+        /* Layout */
+        display: none;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 8px;
+        width: 100%;
+        height: 3em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionTopNav {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 110;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        max-width: 70em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline;
+        position: relative;
+        /* Box model */
+        box-sizing: border-box;
+        padding-inline-start: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        vertical-align: middle;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        height: 2.5em;
+        width: 4.5em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        color: rgb(0,0,0);
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento */
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li a {
+        /* Layout */
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 14px 16px;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    #sectionTopNav ul li a:hover {
+        background-color: rgb(221,221,221, 1);
+        color: black;
+    }
+    
+    
+    .pagination {
+        display: inline-block;
+    }
+      
+    .pagination li a{
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid rgb(221,221,221, 1);
+    }
+      
+    .pagination li a.active {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+      
+    .pagination li a:hover:not(.active) {background-color: rgb(221,221,221, 1);}
+    
+    #navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 1.5em auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 15px 32px;
+        /* Colors */
+        background-color: #4CAF50;
+        color: white;
+        /* Texts */
+        font-size: 16px;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    
+    #navButtonAcesso:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+    
+    .middleContent {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        /* Overflow */
+        overflow: visible;
+    }
+
+    #sectionAtendimento1 {
+        /* Layout */
+        display: none;
+        float: left;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionAtendimento2 {
+        /* Layout */
+        display: none;
+        float: right;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionPlanos {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionJogos{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionBlog{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionParceiros{
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionDepoimentos {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(240,240,240,1);
+    }
+
+    #sectionMidia {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionIdealizadores {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+}
+
+/*
+ * Responsive layout
+ * when the screen is BETWEEN 375 AND 414
+ * SMALL devices (small phones)
+ */
+ @media only screen and (min-width: 375px) {
+
+    .topHeader {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionBannerHeader {
+        /* Layout */
+        display: none;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 8px;
+        width: 100%;
+        height: 3em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionTopNav {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 110;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        max-width: 70em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline;
+        position: relative;
+        /* Box model */
+        box-sizing: border-box;
+        padding-inline-start: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        vertical-align: middle;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        height: 2.5em;
+        width: 4.5em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        color: rgb(0,0,0);
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento */
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li a {
+        /* Layout */
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 14px 16px;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    #sectionTopNav ul li a:hover {
+        background-color: rgb(221,221,221, 1);
+        color: black;
+    }
+    
+    
+    .pagination {
+        display: inline-block;
+    }
+      
+    .pagination li a{
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid rgb(221,221,221, 1);
+    }
+      
+    .pagination li a.active {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+      
+    .pagination li a:hover:not(.active) {background-color: rgb(221,221,221, 1);}
+    
+    #navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 1.5em auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 15px 32px;
+        /* Colors */
+        background-color: #4CAF50;
+        color: white;
+        /* Texts */
+        font-size: 16px;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    
+    #navButtonAcesso:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .middleContent {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        /* Overflow */
+        overflow: visible;
+    }
+
+    #sectionAtendimento1 {
+        /* Layout */
+        display: none;
+        float: left;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionAtendimento2 {
+        /* Layout */
+        display: none;
+        float: right;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionPlanos {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionJogos{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionBlog{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionParceiros{
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionDepoimentos {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(240,240,240,1);
+    }
+
+    #sectionMidia {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionIdealizadores {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+}
+
+/*
+ * Responsive layout
+ * When the screen is BETWEEN 414 AND 768
+ * SMALL devices (phones)
+ */
+ @media only screen and (min-width: 414px) {
+
+    .topHeader {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionBannerHeader {
+        /* Layout */
+        display: none;
+        position: relative;
+        top: 0px;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 8px;
+        width: 100%;
+        height: 3em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+    }
+    
+    #sectionTopNav {
+        /* Layout */
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 110;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        max-width: 70em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline;
+        position: relative;
+        /* Box model */
+        box-sizing: border-box;
+        padding-inline-start: 0px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        /* Texts */
+        vertical-align: middle;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        height: 2.5em;
+        width: 4.5em;
+        /* Colors */
+        background-color: rgba(250,250,250,1);
+        color: rgb(0,0,0);
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento */
+        list-style-type: none;
+    }
+    
+    #sectionTopNav ul li a {
+        /* Layout */
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 14px 16px;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    #sectionTopNav ul li a:hover {
+        background-color: rgb(221,221,221, 1);
+        color: black;
+    }
+    
+    
+    .pagination {
+        display: inline-block;
+    }
+      
+    .pagination li a{
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid rgb(221,221,221, 1);
+    }
+      
+    .pagination li a.active {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+      
+    .pagination li a:hover:not(.active) {background-color: rgb(221,221,221, 1);}
+    
+    #navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        z-index: 100;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 1.5em auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 15px 32px;
+        /* Colors */
+        background-color: #4CAF50;
+        color: white;
+        /* Texts */
+        font-size: 16px;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+        list-style-type: none;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    
+    #navButtonAcesso:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .middleContent {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-left: auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Colors */
+        /* Texts */
+        text-align: center;
+        font-size: 1em;
+        /* Overflow */
+        overflow: visible;
+    }
+
+    #sectionAtendimento1 {
+        /* Layout */
+        display: none;
+        float: left;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionAtendimento2 {
+        /* Layout */
+        display: none;
+        float: right;
+        position: relative;
+        z-index: 90;
+        /* Box model */
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-right: 0px;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 12%;
+        height: 50em;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgb(221,221,221, 1);
+    }
+
+    #sectionPlanos {
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionJogos{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionBlog{
+        /* Layout */
+        display: block;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionParceiros{
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionDepoimentos {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(240,240,240,1);
+    }
+
+    #sectionMidia {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+    #sectionIdealizadores {
+        /* Layout */
+        display: none;
+        position: relative;
+        z-index: 10;
+        /* Box model */
+        box-sizing: border-box;
+        margin: 0px auto;
+        border-style: none;
+        border-width: 0px;
+        padding: 0px;
+        width: 100%;
+        /* Texts */
+        font-family: Verdana, Geneva, sans-serif;
+        /* Colors */
+        background-color: rgba(255,255,255,1);
+    }
+
+}
+
+/*
+ * Responsive layout
+ * When the screen is BETWEEN 768 AND 800
+ * MEDIUM devices
+ */
+@media only screen and (min-width: 768px) {
+    #topHeader {
+        /* Layout */
+        position: relative;
+    }
+    #sectionBannerHeader {
+        /* Layout */
+        display: none;
+        /* Box model */
+        height: 5em;
+    }
+    #sectionTopNav {
+        width: auto;
+    }
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline-block;
+    }
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        width: 100%;
+        height: 3em;
+        /* Colors */
+        /* Texts */
+        /* Overflow */
+        /* Design do elemento*/
+    }
+    .navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        margin: 1.5em auto;
+        padding: 1em 2em;
+        /* Colors */
+        /* Texts */
+        font-size: 1em;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+    }
+    .middleContent {
+        /* Box model */
+        margin-top: 17em;
+    }
+    #sectionAtendimento1 {
+        display: none;
+    }
+    #sectionAtendimento2 {
+        display: none;
+    }
+    #sectionPlanos {
+        width: 100%;
+    }
+    #sectionJogos {
+        width: 100%;
+    }
+    #divResumoJogos {
+        width: 100%;
+    }
+    #sectionParceiros {
+        width: 100%;
+    }
+    #sectionDepoimentos {
+        width: 100%;
+    }
+    #sectionMidia {
+        width: 100%;
+    }
+    #sectionIdealizadores {
+        width: 100%;
+    }
+    .pagination {
+        width: 100%;
+    }
+    #sectionContato {
+        width: 100%;
+    }
+    .formContainer {
+        width: 100%;
+    }
+}
+
+/*
+ * Responsive layout
+ * When the screen is BETWEEN 800 AND 1024
+ * MEDIUM devices
+ */
+@media only screen and (min-width: 800px) {
+    #topHeader {
+        /* Layout */
+        position: fixed;
+    }
+    #sectionBannerHeader {
+        /* Layout */
+        display: block;
+        /* Box model */
+        height: 6em;
+    }
+    #sectionTopNav {
+        width: auto;
+    }
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline-block;
+    }
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        width: 4em;
+        height: 3em;
+        /* Colors */
+        /* Texts */
+        /* Overflow */
+        /* Design do elemento*/
+    }
+    .navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        margin: 0.8em auto;
+        padding: 1em 2em;
+        /* Colors */
+        /* Texts */
+        font-size: 1em;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+    }
+    .middleContent {
+        /* Box model */
+        margin-top: 8em;
+    }
+    #sectionAtendimento1 {
+        display: none;
+    }
+    #sectionAtendimento2 {
+        display: none;
+    }
+    #sectionPlanos {
+        width: 100%;
+    }
+    #sectionJogos {
+        width: 100%;
+    }
+    #divResumoJogos {
+        width: 100%;
+    }
+    #sectionParceiros {
+        width: 100%;
+    }
+    #sectionDepoimentos {
+        width: 100%;
+    }
+    #sectionMidia {
+        width: 100%;
+    }
+    #sectionIdealizadores {
+        width: 100%;
+    }
+    .pagination {
+        width: 100%;
+    }
+    #sectionContato {
+        width: 100%;
+    }
+    .formContainer {
+        width: 100%;
+    }
+}
+
+/*
+ * Responsive layout
+ * When the screen is BETWEEN 1024 AND 1200
+ * LARGE devices (laptops and desktops)
+ */
+@media only screen and (min-width: 1024px) {
+    #topHeader {
+        /* Layout */
+        position: fixed;
+    }
+    #sectionBannerHeader {
+        /* Layout */
+        display: block;
+        /* Box model */
+        height: 7em;
+    }
+    #sectionTopNav {
+        width: auto;
+    }
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline-block;
+    }
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        width: 6em;
+        height: 3.5em;
+        /* Colors */
+        /* Texts */
+        /* Overflow */
+        /* Design do elemento*/
+    }
+    .navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        margin: 0.8em auto;
+        padding: 1em 2em;
+        /* Colors */
+        /* Texts */
+        font-size: 1em;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+    }
+    .middleContent {
+        /* Box model */
+        margin-top: 9em;
+    }
+    #sectionAtendimento1 {
+        display: block;
+        width: 22%;
+    }
+    #sectionAtendimento2 {
+        display: block;
+        width: 22%;
+    }
+    #sectionPlanos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionJogos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #divResumoJogos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionParceiros {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionDepoimentos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionMidia {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionIdealizadores {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .pagination {
+        /* */
+    }
+    #sectionContato {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .formContainer {
+        width: 100%;
+    }
+}
+
+/*
+ * Responsive layout
+ * When the screen is 1200 wide and up
+ * LARGE devices (large laptops and desktops)
+ */
+@media only screen and (min-width: 1200px) {
+    #topHeader {
+        /* Layout */
+        position: fixed;
+    }
+    #sectionBannerHeader {
+        /* Layout */
+        display: block;
+        /* Box model */
+        width: 100%;
+        height: 8em;
+    }
+    #sectionTopNav {
+        width: auto;
+    }
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline-block;
+    }
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        width: 7em;
+        height: 4em;
+        /* Colors */
+        /* Texts */
+        /* Overflow */
+        /* Design do elemento*/
+    }
+    .navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        margin: 0.8em auto;
+        padding: 1em 2em;
+        /* Colors */
+        /* Texts */
+        font-size: 1em;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+    }
+    .middleContent {
+        /* Box model */
+        margin-top: 10em;
+    }
+    #sectionAtendimento1 {
+        display: block;
+        width: 22%;
+    }
+    #sectionAtendimento {
+        display: block;
+        width: 22%;
+    }
+    #sectionPlanos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionJogos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #divResumoJogos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionParceiros {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionDepoimentos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionMidia {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionIdealizadores {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .pagination {
+        /* */
+    }
+    #sectionContato {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .formContainer {
+        width: 100%;
+    }
+}

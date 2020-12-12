@@ -1,0 +1,116 @@
+/*
+ * Design de responsividade
+ *
+ * iPhone 5/SE           ->>  320 vs  568
+ * Moto G4 and Galaxy S5 ->>  360 vs  640
+ * Galaxy S9/S9+         ->>  360 vs  740
+ * iPhone 6/7/8          ->>  375 vs  667
+ * iPhone X/XS           ->>  375 vs  812
+ * iPhone 6/7/8 Plus     ->>  414 vs  736
+ * iPad                  ->>  768 vs 1024
+ * kindle Fire HDX Linux ->>  800 vs 1280
+ * iPad PRO              ->> 1024 vs 1366
+ * laptops and desktops  ->> 1200
+ *
+ */
+
+/*
+ * Responsive layout
+ * When the screen is BETWEEN 800 AND 1024
+ * MEDIUM devices
+ */
+@media only screen and (min-width: 800px) {
+    #topHeader {
+        /* Layout */
+        position: fixed;
+    }
+    #sectionBannerHeader {
+        /* Layout */
+        display: block;
+        /* Box model */
+        width: 100%;
+        height: 8em;
+    }
+    #sectionTopNav {
+        width: auto;
+    }
+    #sectionTopNav ul {
+        /* Layout */
+        display: inline-block;
+    }
+    #sectionTopNav ul li {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        width: 7em;
+        height: 4em;
+        /* Colors */
+        /* Texts */
+        /* Overflow */
+        /* Design do elemento*/
+    }
+    .navButtonAcesso {
+        /* Layout */
+        display: inline-block;
+        /* Box model */
+        margin: 0.8em auto;
+        padding: 1em 2em;
+        /* Colors */
+        /* Texts */
+        font-size: 1em;
+        text-align: center;
+        /* Overflow */
+        overflow: hidden;
+        /* Design do elemento*/
+    }
+    .middleContent {
+        /* Box model */
+        margin-top: 10em;
+    }
+    #sectionAtendimento1 {
+        display: block;
+        width: 22%;
+    }
+    #sectionAtendimento {
+        display: block;
+        width: 22%;
+    }
+    #sectionPlanos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionJogos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #divResumoJogos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionParceiros {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionDepoimentos {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionMidia {
+        width: 50%;
+        margin: 0px auto;
+    }
+    #sectionIdealizadores {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .pagination {
+        /* */
+    }
+    #sectionContato {
+        width: 50%;
+        margin: 0px auto;
+    }
+    .formContainer {
+        width: 100%;
+    }
+}
