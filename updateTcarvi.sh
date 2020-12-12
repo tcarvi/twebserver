@@ -1,1 +1,0 @@
-# Apenas para visualização e edição local
